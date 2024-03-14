@@ -14,11 +14,13 @@ public class DoctorServiceImpl implements IDoctorService {
 
     @Override
     public void addDoctor(Doctor doctor) {
+
         doctorRepository.addDoctor(doctor);
     }
 
     @Override
     public void updateDoctor(int doctorId, double fees) {
+
         doctorRepository.updateDoctor(doctorId, fees);
     }
 

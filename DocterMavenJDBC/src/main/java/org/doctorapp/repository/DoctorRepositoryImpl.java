@@ -118,11 +118,11 @@ public class DoctorRepositoryImpl implements IDoctorRepository {
 
                    Doctor doctor=new Doctor();
                    doctor.setDoctorName(resultSet.getString("doctor_name"));
-                   doctor.getSpeciality(speciality);
+                   doctor.setSpeciality(speciality);
                    doctor.setExperience(experience);
                    doctor.setDoctorId(doctorId);
                    doctor.setFees(fees);
-                   doctor.getRatings(ratings);
+                   doctor.setRatings(ratings);
                    doctors.add(doctor);
 
 
@@ -158,15 +158,15 @@ public class DoctorRepositoryImpl implements IDoctorRepository {
              PreparedStatement statement = connection.prepareStatement(Queries.FINDBYSPECANDNAME);
         ) {
             statement.setString(1, speciality);
-            statement.setString(2,"%"+doctorName+"%");
+            statement.setString(2,doctorName);
             try( ResultSet resultSet = statement.executeQuery();){
                 while (resultSet.next()) {
                     Doctor doctor=new Doctor();
                     doctor.setDoctorName(resultSet.getString("doctor_name"));
                     doctor.setSpeciality(resultSet.getString("speciality"));
                     doctor.setExperience(resultSet.getInt("experience"));
-                    doctor.getRatings(resultSet.getInt("ratings"));
-                    doctor.getDoctorId(resultSet.getInt("doctor_id"));
+                    doctor.setRatings(resultSet.getInt("ratings"));
+                    doctor.setDoctorId(resultSet.getInt("doctor_id"));
                     doctors.add(doctor);
 
 

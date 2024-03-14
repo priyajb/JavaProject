@@ -21,5 +21,6 @@ public class User {
         //doctorService.updateDoctor(1,1000);
         //doctorService.deleteDoctor(7);
        doctorService.getByspecialityAndNameContains("ORTHOPEDIC","praveen");
+
     }
 }

@@ -11,7 +11,7 @@ public class DoctorDb {
         String password = "root";
         try {connection = DriverManager.getConnection(url, username, password);
 
-
+            System.out.println("enter to db");
         } catch (Exception e) {
             e.printStackTrace();
         }

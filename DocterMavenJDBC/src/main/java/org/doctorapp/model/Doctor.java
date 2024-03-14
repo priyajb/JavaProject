@@ -26,10 +26,12 @@ public class Doctor {
     }
 
     public void setDoctorId(Integer doctorId) {
+
         this.doctorId = doctorId;
     }
 
     public String getDoctorName() {
+
         return doctorName;
     }
 
@@ -38,34 +40,42 @@ public class Doctor {
     }
 
     public String getSpeciality() {
+
         return speciality;
     }
 
     public void setSpeciality(String speciality) {
+
         this.speciality = speciality;
     }
 
     public double getFees() {
+
         return fees;
     }
 
     public void setFees(double fees) {
+
         this.fees = fees;
     }
 
     public int getRatings() {
+
         return ratings;
     }
 
     public void setRatings(int ratings) {
+
         this.ratings = ratings;
     }
 
     public int getExperience() {
+
         return experience;
     }
 
     public void setExperience(int experience) {
+
         this.experience = experience;
     }
 
@@ -89,12 +99,12 @@ public class Doctor {
         this.experience = experience;
     }
 
-    public void getRatings(int ratings) {
-    }
-
-    public void getSpeciality(String speciality) {
-    }
-
-    public void getDoctorId(int doctor_id) {
-    }
+//    public void getRatings(int ratings) {
+//    }
+//
+//    public void getSpeciality(String speciality) {
+//    }
+//
+//    public void getDoctorId(int doctor_id) {
+//    }
 }
